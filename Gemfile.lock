@@ -1,0 +1,26 @@
+PATH
+  remote: .
+  specs:
+    deploy_lockchecker (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    maxitest (2.0.2)
+      minitest (>= 5.0.0, < 5.10.0)
+    metaclass (0.0.4)
+    minitest (5.9.1)
+    mocha (1.1.0)
+      metaclass (~> 0.0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  deploy_lockchecker!
+  maxitest (~> 2.0.2)
+  minitest (~> 5.9.0)
+  mocha (~> 1.1.0)
+
+BUNDLED WITH
+   1.12.5

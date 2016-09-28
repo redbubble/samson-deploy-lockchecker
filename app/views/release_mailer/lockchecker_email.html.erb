@@ -1,0 +1,9 @@
+<h1>
+  Your code change to <%= "#{@release.project.name}" %> is not auto-deployed to <%= "#{@stage.name}" %> because deployment is locked.
+</h1>
+
+<h3>Commits</h3>
+<%= render 'changeset/commits', changeset: @changeset %>
+
+<h3>Pull Requests</h3>
+<%= render 'changeset/pulls', changeset: @changeset %>
