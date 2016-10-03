@@ -4,7 +4,7 @@ require 'minitest/autorun'
 # Configure Rails Environment
 ENV["RAILS_ENV"] = "test"
 
-load "#{File.dirname(__FILE__)}/../lib/samson_deploy_lockchecker/deploy_lockchecker.rb"
+load "#{File.dirname(__FILE__)}/../lib/samson_deploy_lockchecker/lockchecker.rb"
 
 # Filter out Minitest backtrace while allowing backtrace from other libraries
 # to be shown.
