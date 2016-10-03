@@ -6,5 +6,5 @@ end
 
 Samson::Hooks.callback :release_deploy_conditions do |stage, release|
 
-  Lockchecker.new.deployment_locked?(release, stage)
+  Lockchecker.new.run_auto_deploy?(release, stage)
 end
