@@ -7,7 +7,8 @@ module SamsonDeployLockchecker
     end
 
     def run_auto_deploy?(release, stage)
-      locked = stage.locked?
+      stage_lock = stage.lock
+      locked = !!stage_lock && !stage_lock.warning?
       auto_deploy = !locked
       lockchecker_mailer.deliver_failed_email(release, stage) if locked
       auto_deploy
