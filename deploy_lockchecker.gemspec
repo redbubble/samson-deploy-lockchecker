@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "LICENSE.txt", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_development_dependency "minitest", '~> 5.9.0'
-  s.add_development_dependency "maxitest", '~> 2.0.2'
-  s.add_development_dependency "mocha", '~> 1.1.0'
+  s.add_development_dependency "minitest"
+  s.add_development_dependency "maxitest"
+  s.add_development_dependency "mocha"
 end
